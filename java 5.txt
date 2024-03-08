@@ -1,0 +1,56 @@
+import java.util.Scanner;
+import java.util.*;
+public class SumaPromedio {
+ public static void main(String[] ar) {
+System.out.println("descripción: De un artículo se pide al usuario");
+ Scanner teclado=new Scanner(System.in);
+ int num1,num2,num3,num4;
+ System.out.print("Ingrese la referencia :");
+ num1=teclado.nextInt();
+ System.out.print("Ingrese el Nombre del artículo:");
+ num2=teclado.nextInt();
+ System.out.print("Ingrese el valor unitario:");
+ num3=teclado.nextInt();
+ System.out.print("Ingrese las unidades disponibles:");
+ num4=teclado.nextInt();
+ if (num4==0){
+ double resultado =num3 + 19%;
+ System.out.print("el valor total del articulo (con IVA incluido 19%) es:");
+ System.out.println(resultado);
+ }else 
+ double result = (num3 + num4) + 15%;
+ System.out.print("el valor total del articulo (con IVA incluido 15%) es:");
+ System.out.println(resultado);
+ }
+}
+----------------------------------------------------------------------------
+ import java.util.Scanner;
+import java.util.*;
+public class SumaIva {
+ public static void main(String[] ar) {
+System.out.println("descripcion: De un articulo se pide al usuario");
+ Scanner teclado=new Scanner(System.in);
+ int num1,num2,num3,num4;
+ double resultado,iva;
+ System.out.print("Ingrese la referencia :");
+ System.out.print("1001--1002--1010--1030");
+ num1=teclado.nextInt();
+ System.out.print("Ingrese el Nombre del articulo:");
+ System.out.print("camisas--pantalon--medias--blusas");
+ num2=teclado.nextInt();
+ System.out.print("Ingrese el valor unitario:");
+ num3=teclado.nextInt();
+ System.out.print("Ingrese las unidades disponibles:");
+ num4=teclado.nextInt();
+ System.out.print("el # de referencia:"+ (num1)+"\n");
+ System.out.print("nombre del producto :"+ (num2)+"\n");
+ System.out.print(" # unitario :"+ (num1)+"\n");
+ System.out.print("# unidades dispo.. :"+ (num1)+"\n");
+ resultado =num3 * 0.19;
+ iva = resultado + num3;
+ System.out.print("el valor total del articulo (con IVA incluido 19%) es:");
+ System.out.println(resultado);
+ System.out.print("valor total del producto es:");
+System.out.println(iva);
+ }
+}
